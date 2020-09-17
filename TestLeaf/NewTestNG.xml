@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Suite">
+ 
+<listeners>
+        <listener class-name="HandleFailedTestCase.RetryListeners"/>
+  </listeners>
+ 
+ <test name="Test1">
+ 
+ <classes>
+ <class name="HandleFailedTestCase.Sample" />
+ </classes>
+ </test> <!-- Test -->
+ 
+ <test name="Test2">
+ 
+ <classes>
+ <class name="HandleFailedTestCase.Simple" />
+ </classes>
+ </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->
